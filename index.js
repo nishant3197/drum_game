@@ -7,12 +7,14 @@ for (var i=0; i<no_of_elements; ++i){
     all_buttons[i].addEventListener("click", function(){
         var buttonClicked = this.innerHTML;
         createSoundOnChar(buttonClicked);
+        buttonAnimation(buttonClicked);
     });
 }
 
 //for key pressing
 document.addEventListener("keydown",function (keyPressed){
     createSoundOnChar(keyPressed.key);
+    buttonAnimation(keypressed.key);
     
 });
 
@@ -54,3 +56,12 @@ function createSoundOnChar(character){
         var drumSound = new Audio(elementSound);
         drumSound.play();
 }
+
+function buttonAnimation(character){
+    var chooseButton = "." + character;
+    document.querySelector(chooseButton).classList.add("pressed");
+    setTimeout(function(){
+        document.querySelector(chooseButton).classList.remove("pressed");
+    }),100);
+}
+        
