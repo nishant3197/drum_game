@@ -14,7 +14,7 @@ for (var i=0; i<no_of_elements; ++i){
 //for key pressing
 document.addEventListener("keydown",function (keyPressed){
     createSoundOnChar(keyPressed.key);
-    buttonAnimation(keypressed.key);
+    buttonAnimation(keyPressed.key);
     
 });
 
