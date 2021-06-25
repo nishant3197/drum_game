@@ -62,6 +62,6 @@ function buttonAnimation(character){
     document.querySelector(chooseButton).classList.add("pressed");
     setTimeout(function(){
         document.querySelector(chooseButton).classList.remove("pressed");
-    }),100);
+    },100);
 }
         
