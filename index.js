@@ -18,7 +18,7 @@ document.addEventListener("keydown",function (keyPressed){
     
 });
 
-//create a sound
+//create a sound 
 function createSoundOnChar(character){
     var elementSound;
     switch(character){
